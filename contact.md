@@ -1,22 +1,22 @@
 Contact API
 ===========
 
-The contact API let's you verify an entire business card of contact information in one simple request. So instead of having to 4 requests to verify a contact's name, email, phone, and address, you just make one call, easy oeasy lemon squeezy. Heck, we even through an IP address verification in there for good measure.
+The contact API let's you verify an entire business card of contact information in one simple request. So instead of having to 4 requests to verify a contact's name, email, phone, and address, you just make one call, easy peasy lemon squeezy. Heck, we even through an IP address verification in there for good measure.
 
-So using the Contact API is just like using the other BriteVerify APIs except instead of passing a single data element to be verified, you are all the contact info associated with a person... so multiple data elements. The only big difference is how you format the parameters of the GET request. When using the Contact API you wrap each parameter in a contact, e.g., contact[data_element].
+So using the Contact API is just like using the other BriteVerify APIs except instead of passing a single data element to be verified, you are passing all the contact info associated with a person. The only big difference technically is how you format the parameters of the GET request. When using the Contact API you wrap each parameter in a contact, e.g., contact[data_element].
 
 Here is an example of a GET request that will just verify a contact's email:
 
 https://bpi.briteverify.com/contacts.json?contact[email]=james@example.com&apikey=your-api-key
 
-This bracketed technique is a very common for passing objects as parameters instead of single values. Anyone familiar with Ruby on Rails or with of with how jQuery serializes JSON objects will recognize this pattern.
+This bracketed technique is a very common for passing objects as parameters instead of single values. Anyone familiar with Ruby on Rails or with how jQuery serializes JSON objects will recognize this pattern.
 
 Now let's get into some examples.
 
 Full Contact Verification
 -------------------------
 
-In this example we are going to just pass all our contact info in a single request. For purposes of getting started, let's just assume all this data is valid. If you have not read up on the other API. It might be helpful, to look them over, since Contact is a composite API that assembles them all together. 
+In this example we are going to just pass all our contact info in a single request. For purposes of getting started, let's just assume all this data is valid. If you have not read up on the other APIs, it might be helpful to look them over since Contact is a composite API that assembles them all together. 
 
 https://bpi.briteverify.com/contacts.json?contact[name]=James+McLachlan&contact[email]=james@example.com&contact[phone]=7045251234&contact[ip]=174.96.214.3&contact[street]=325+Example+Pl&contact[zip]=101223&apikey=2cb8b810-a1f7-45e6-81bc-74d49c7db1ce
 
@@ -87,7 +87,7 @@ That is a big response, but hopefully it is pretty straight forward.
 Errors & Error Codes
 --------------------
 
-One nice thing about the Contact API, is that it makes it really easy to know when something is wrong with some of the contact data. If any of the data elements are invalid an array of errors and error codes will be added to the response. This way you don't have to search through the entire response body if you are just trying to find out which data elements are invalid.
+One nice thing about the Contact API is that it makes it really easy to know when something is wrong with some of the contact data. If any of the data elements are invalid an array of errors and error codes will be added to the response. This way you don't have to search through the entire response body if you are just trying to find out which data elements are invalid.
 
 So let's look at a simple example email and phone.
 
@@ -123,7 +123,7 @@ https://bpi.briteverify.com/contacts.json?contact[email]=james@nowhere.com&conta
 
 So what we care about are the first two arrays, errors and error_codes. 
 
-Errors is a basically a humanized version of the error codes, which represent what actually is invalid about the given data element. Refer to the individual APIs (email, phone, name, address, ip...) for more information about the what error codes might be returned.
+Errors is basically a humanized version of the error codes, which represent what actually is invalid about the given data element. Refer to the individual APIs documentation for more information about which error codes can be returned for a given element.
 
 There we go. That is the Contact API. We will be adding more documentation, examples, and How-Tos soon. In the meantime, have fun.
 
