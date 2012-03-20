@@ -18,7 +18,7 @@ Full Contact Verification
 
 In this example we are going to just pass all our contact info in a single request. For purposes of getting started, let's just assume all this data is valid. If you have not read up on the other APIs, it might be helpful to look them over since Contact is a composite API that assembles them all together. 
 
-```html
+```text
 
 https://bpi.briteverify.com/contacts.json?contact[name]=James+McLachlan&contact[email]=james@example.com&contact[phone]=7045251234&contact[ip]=174.96.214.3&contact[street]=325+Example+Pl&contact[zip]=101223&apikey=your-api-key
 ```
