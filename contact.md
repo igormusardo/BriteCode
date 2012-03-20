@@ -87,9 +87,9 @@ That is a big response, but hopefully it is pretty straight forward.
 Errors & Error Codes
 --------------------
 
-One nice thing about the Contact API is that it makes it really easy to know when something is wrong with some of the contact data. If any of the data elements are invalid an array of errors and error codes will be added to the response. This way you don't have to search through the entire response body if you are just trying to find out which data elements are invalid.
+One nice thing about the Contact API is that it makes it really easy to know when something is wrong with some of the contact data. If any of the data elements are invalid an errors hash and an error codes hash is added to the response. This way you don't have to search through the entire response body if you are just trying to find out which data elements are invalid.
 
-So let's look at a simple example email and phone.
+So let's look at a simple example with email and phone.
 
 https://bpi.briteverify.com/contacts.json?contact[email]=james@nowhere.com&contact[phone]=7041231234&apikey=your-api-key
 
