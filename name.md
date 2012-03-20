@@ -21,7 +21,7 @@ http://bpi.briteverify.com/names.json?fullname=James+McLachlan&apikey=your-api-k
   "status":"valid",
   "duration":0.124829515
 }
-
+```
 
 And because we are nice guys, if you can't pass a fullname, we let you pass in first and last name instead ;-)
 
