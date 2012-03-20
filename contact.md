@@ -95,8 +95,8 @@ https://bpi.briteverify.com/contacts.json?contact[email]=james@nowhere.com&conta
 
 ```JavaScript
 {
-  "errors":{"email":"Email domain invalid", "phone","Invalid prefix"},
-  "error_codes":{"email":"email_domain_invalid","phone","invalid_prefix"},
+  "errors":{"email":"Email domain invalid", "phone":"Invalid prefix"},
+  "error_codes":{"email":"email_domain_invalid","phone":"invalid_prefix"},
   "email":{
     "address":"james@nowhere.com",
     "account":"james",
