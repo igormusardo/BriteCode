@@ -49,6 +49,7 @@ Response Attributes
 * error_code: a code representation of error
 * connected: whether or not a valid email is connected to active online networks
 * disposable: is the email a temporary or "disposable" email address
+* duration: the time it took to process your request
 
 Status
 -----
