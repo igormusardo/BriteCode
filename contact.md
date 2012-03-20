@@ -7,7 +7,9 @@ So using the Contact API is just like using the other BriteVerify APIs except in
 
 Here is an example of a GET request that will just verify a contact's email:
 
+```text
 https://bpi.briteverify.com/contacts.json?contact[email]=james@example.com&apikey=your-api-key
+```
 
 This bracketed technique is a very common for passing objects as parameters instead of single values. Anyone familiar with Ruby on Rails or with how jQuery serializes JSON objects will recognize this pattern.
 
