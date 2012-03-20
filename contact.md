@@ -91,6 +91,8 @@ One nice thing about the Contact API, is that it makes it really easy to know wh
 
 So let's look at a simple example email and phone.
 
+https://bpi.briteverify.com/contacts.json?contact[email]=james@nowhere.com&contact[phone]=7041231234&apikey=your-api-key
+
 ```JavaScript
 {
   "errors":[{"email":"Email domain invalid"},{"phone","Invalid prefix"}],
