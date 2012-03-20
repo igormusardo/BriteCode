@@ -9,7 +9,9 @@ The Name API does essentially three things:
 
 Like all out APIs it is dead simple.
 
+```text
 http://bpi.briteverify.com/names.json?fullname=James+McLachlan&apikey=your-api-key
+```
 
 ```JavaScript
 {
@@ -34,7 +36,9 @@ Invalid Names & Error Codes
 
 If there is something shady about the name, we will respond with an invalid status and and error code and error message that explain why we think the name is bunk.
 
+```text
 http://bpi.briteverify.com/names.json?fullname=Senor+Butt+Head&apikey=your-api-key
+```
 
 ```JavaScript
 {

@@ -8,7 +8,9 @@ The email api is pretty straight forward. It is a simple GET request with two pa
 
 Here is an example request:
 
+```text
 https://bpi.briteverify.com/emails.json?address=james@briteverify.com&apikey=your-api-key
+```
 
 Unless something goes wrong, the HTTP status code will always be 200, regardless if the email is valid or invalid. The above request would yield the follow response.
 ```JavaScript
@@ -24,7 +26,9 @@ Unless something goes wrong, the HTTP status code will always be 200, regardless
 
 Now if I pass an invalid email I will get not only a status of "invalid", I will also get an error and and error code explaining why the email is invalid. 
 
+```text
 https://bpi.briteverify.com/emails.json?address=james@yahoo.com&apikey=your-api-key
+```
 
 ```Javascript
 {
@@ -77,7 +81,9 @@ Connected
 
 If you pass an additional parameter of "verify_connected=true", and the email is valid, we will then scan the online networks, wishlists, public directories, social networks, photo sharing sites, basically the internet, to see if the email is "connected" to other active accounts. This indicates that the email is much more likely to be actively used and connected to a real person. The connected attribute will be present if the email is valid and the verify_connected parameter is passed as true. 
 
+```text
 https://bpi.briteverify.com/emails.json?address=james@briteverify.com&verify_connected=true&apikey=your-api-key
+```
 
 ```JavaScript
 {
