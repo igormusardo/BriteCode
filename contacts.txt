@@ -1,0 +1,53 @@
+Contact API
+
+The contact API provides full contact data verification in a single call. Using it you can verify name, email, postal address, phone all in realtime.
+
+Example request
+
+http://api2.briteverify.com/contacts/verify.json?contact[fullname]=BullCrap+789sdfsd&contact[email]=notjames@briteverify.com&contact[phone]=7045255526&contact[address1]=120+Nowhere&contact[address2]=suite+108&contact[zip]=28210
+
+Example Response
+
+{
+  "name" : {
+    "first"   : "BullCrap",
+    "last"    : "Ass",
+    "status"  : "invalid",
+    "error"   : "contains vulgarity"
+  },
+  "email" : {
+    "address" : "notjames@briteverify.com",
+    "account" : "notjames",
+    "domain"  : "briteverify.com",
+    "status"  : "account_not_found",
+    "error"   : "account not found at domain"
+  },
+  "phone" : {
+    "number"  : "7045255526",
+    "status"  : "valid",
+    "type"    : "mobile",
+    "areacode"  : "704",
+    "prefix"  : "525",
+    "suffix"  : "5526",
+    "city"    : "Charlotte",
+    "state"   : "NC",
+    "country" : "US"
+  },
+  "address" : {
+    "address1" : "120 Nowhere",
+    "address2" : "Suite 108",
+    "city"    : "Charlotte",
+    "state"   : "NC",
+    "country" : "US",
+    "status"  : "invalid",
+    "error"   : "not a deliverable U.S. address" 
+  },
+  "errors" : [["name", "contains vulgarity"], ["email", "invalid email account"], ["address","not a deliverable U.S. address"]],
+  "durration" : "0.206228"
+}
+
+This format will work with how most of the major js libs encode objects for ajax requests and with how rails and node parse requests.
+
+jQuery.get("verify.json", {"contact" : {...}}, function(contact){
+  alert(contact.email.error);
+});
