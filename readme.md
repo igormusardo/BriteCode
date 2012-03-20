@@ -11,6 +11,7 @@ Once you have set up an account you can login, click "Account" and see your cred
 The BriteVerify Verification APIs are all available individually, or you can validate multiple data elements in one call using the Contact API.
 
 BriteServices
+-------------
 
 * [Email](https://github.com/BriteVerify/BriteCode/blob/master/email.md)
 * Phone
