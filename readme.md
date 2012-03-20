@@ -16,7 +16,7 @@ BriteServices
 * [Email](https://github.com/BriteVerify/BriteCode/blob/master/email.md)
 * Phone
 * US Postal Address
-* Name
+* [Name](https://github.com/BriteVerify/BriteCode/blob/master/name.md)
 * IP Address
 * [Contact](https://github.com/BriteVerify/BriteCode/blob/master/contact.md)
 
