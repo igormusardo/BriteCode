@@ -18,7 +18,7 @@ Full Contact Verification
 
 In this example we are going to just pass all our contact info in a single request. For purposes of getting started, let's just assume all this data is valid. If you have not read up on the other APIs, it might be helpful to look them over since Contact is a composite API that assembles them all together. 
 
-https://bpi.briteverify.com/contacts.json?contact[name]=James+McLachlan&contact[email]=james@example.com&contact[phone]=7045251234&contact[ip]=174.96.214.3&contact[street]=325+Example+Pl&contact[zip]=101223&apikey=2cb8b810-a1f7-45e6-81bc-74d49c7db1ce
+https://bpi.briteverify.com/contacts.json?contact[name]=James+McLachlan&contact[email]=james@example.com&contact[phone]=7045251234&contact[ip]=174.96.214.3&contact[street]=325+Example+Pl&contact[zip]=101223&apikey=your-api-key
 
 ```JavaScript
 {
@@ -95,8 +95,8 @@ https://bpi.briteverify.com/contacts.json?contact[email]=james@nowhere.com&conta
 
 ```JavaScript
 {
-  "errors":[{"email":"Email domain invalid"},{"phone","Invalid prefix"}],
-  "error_codes":[{"email":"email_domain_invalid"},{"phone","invalid_prefix"}],
+  "errors":{"email":"Email domain invalid", "phone","Invalid prefix"},
+  "error_codes":{"email":"email_domain_invalid","phone","invalid_prefix"},
   "email":{
     "address":"james@nowhere.com",
     "account":"james",
