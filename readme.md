@@ -1,7 +1,9 @@
-# BriteCode
+BriteCode
+=========
 Intros, walkthroughs, how-tos, demos, and docs for the BriteVerify API set.
 
-## Getting Started with BriteVerify
+Getting Started with BriteVerify
+--------------------------------
 Well, the first step is to request for an account at https://www.briteverify.com/. Once your account has been approved you will be notified via email and you can follow the setup link to create your user account.
 
 Once you have set up an account you can login, click "Account" and see your credentials and some live examples. For the Web Service APIs the most important thing to grab is your APIKEY.
@@ -10,7 +12,7 @@ If you are using the the JavaScript libray you will need to click on "Edit" to t
 
 The BriteVerify Verification Web Services are all available individually, or you can validate multiple data elements in one call using the Contact Service.
 
-The complete list of Verification Web Services are:
+BriteServices
 
 * Email
 * Phone
@@ -21,4 +23,5 @@ The complete list of Verification Web Services are:
 
 All the Web Services are currently available via the JavaScript API with the exception of IP and Contact. 
 
-### Getting Started with the Web Services 
+Getting Started with the Web Services
+------------------------------------- 
