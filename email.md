@@ -54,7 +54,7 @@ Response Attributes
 Status
 -----
 
-There are only 4 status for an email in BriteVerify.
+There are only 4 statuses for an email in BriteVerify.
 
 1. valid: The email represents a real account / inbox available at the given domain
 2. invalid: Not a real email 
