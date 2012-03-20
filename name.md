@@ -1,5 +1,5 @@
 Name API
---------
+========
 
 The Name API does essentially three things:
 
