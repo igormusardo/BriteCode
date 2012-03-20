@@ -14,10 +14,10 @@ BriteServices
 -------------
 
 * [Email](https://github.com/BriteVerify/BriteCode/blob/master/email.md)
-* Phone
-* US Postal Address
+* [Phone](https://github.com/BriteVerify/BriteCode/blob/master/phone.md)
+* [US Postal Address](https://github.com/BriteVerify/BriteCode/blob/master/address.md)
 * [Name](https://github.com/BriteVerify/BriteCode/blob/master/name.md)
-* IP Address
+* [IP Address](https://github.com/BriteVerify/BriteCode/blob/master/ip.md)
 * [Contact](https://github.com/BriteVerify/BriteCode/blob/master/contact.md)
 
 
