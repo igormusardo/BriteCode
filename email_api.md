@@ -8,7 +8,7 @@ The email api is pretty straight forward. It is a simple GET request with two pa
 
 Here is an example request:
 
-http://bpi.briteverify.com/emails.json?address=james@briteverify.com&apikey=<your-api-key>
+https://bpi.briteverify.com/emails.json?address=james@briteverify.com&apikey=<your-api-key>
 
 Unless something goes wrong, the HTTP status code will always be 200, regardless if the email is valid or invalid. The above request would yield the follow response.
 ```JavaScript
@@ -24,7 +24,7 @@ Unless something goes wrong, the HTTP status code will always be 200, regardless
 
 Now if I pass an invalid email I will get not only a status of "invalid", I will also get an error and and error code explaining why the email is invalid. 
 
-http://bpi.briteverify.com/emails.json?address=james@yahoo.com&apikey=<your-api-key>
+https://bpi.briteverify.com/emails.json?address=james@yahoo.com&apikey=<your-api-key>
 
 ```Javascript
 {
