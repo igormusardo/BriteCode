@@ -1,6 +1,13 @@
 US Postal Address API
 =====================
 
+The Postal Address service provides Delivery Point Verification (DPV) of a US address. This ensures that the address is capable of receiving mail, not just that if physically exists. This means that if an apartment number is omitted for an address that is a highrise apartment build, then it will be flagged invalid.
+
+Examples
+--------
+
+###Valid US Address 
+
 ```text
 http://bpi.briteverify.com/addresses.json?address[street]=120+N+Cedar&address[unit]=Apt+3201&address[zip]=28210&apikey=your-apikey
 ```
@@ -24,6 +31,8 @@ http://bpi.briteverify.com/addresses.json?address[street]=120+N+Cedar&address[un
   "duration":0.326942834
 }
 ```
+
+###Error Example
 
 ```text
 http://bpi.briteverify.com/addresses.json?address[street]=120+N+Cedar&address[zip]=28210&apikey=your-apikey

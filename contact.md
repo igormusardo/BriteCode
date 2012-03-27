@@ -86,7 +86,7 @@ https://bpi.briteverify.com/contacts.json?contact[name]=James+McLachlan&contact[
 }
 ```
 
-Whew. That is a big response, but hopefully it is pretty straight forward.
+Whew. That's a big response, but hopefully it is pretty straight forward.
 
 Errors & Error Codes
 --------------------

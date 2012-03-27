@@ -1,6 +1,14 @@
 IP Address API
 ==============
 
+The IP service validates an IP address and returns related geographic and ISP data. IP addresses are often given in blocks to internet service providers and other institutions. The location is an approximation based on the location of the institution.
+
+
+Examples
+--------
+
+###A Valid IP
+
 ```text
 http://bpi.briteverify.com/ips.json?address=174.96.214.3&apikey=your-api-key
 ```
@@ -21,6 +29,8 @@ http://bpi.briteverify.com/ips.json?address=174.96.214.3&apikey=your-api-key
   "duration":0.482947435
 }
 ```
+
+###An invalid IP
 
 ```text
 http://bpi.briteverify.com/ips.json?address=174.96.214.323423423&apikey=your-api-key

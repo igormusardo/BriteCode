@@ -1,6 +1,11 @@
 Phone API
 =========
 
+The Phone verification service verifies phone numbers down to 7 and 10 digits, updates area codes, and appends location and service type information. This will enable you to not only know that a phone number is valid, but that it is from Charlotte, NC and is a mobile phone.
+
+Valid Phone Number Example
+--------------------------
+
 ```text
 http://bpi.briteverify.com/phones.json?number=704-555-5555&apikey=your-api-key
 ```
@@ -26,10 +31,13 @@ http://bpi.briteverify.com/phones.json?number=704-555-5555&apikey=your-api-key
 ```
 
 Service Types
-=============
-* moble
+-------------
+* mobile
 * pots (Plain Ole Telephone Service, landline)
 * digital
+
+Invalid Phone Number Example
+----------------------------
 
 ```text
 http://bpi.briteverify.com/phones.json?number=704-123-1234&apikey=your-api-key
