@@ -68,7 +68,7 @@ There are only 4 statuses for an email in BriteVerify.
 Error & Error Code
 ------------------
 
-The the error is really just a humanized version of the error code. So that an error_code of "email_account_invalid" will have an error of "Email account invalid." The error in this sense is really the "error message," something intended to be displayed in a Web Form or application UI.
+The error is really just a humanized version of the error code. So that an error_code of "email_account_invalid" will have an error of "Email account invalid." The error in this sense is really the "error message," something intended to be displayed in a Web Form or application UI.
 
 ###Error Codes
 

@@ -74,12 +74,12 @@ So like post of our APIs the statues are limited to the three values below.
 * invalid
 * unknown
 
-This helps us keep things simple. But in this case the unknown status require a bit more discussion.
+This helps us keep things simple. But in this case the unknown status requires a bit more discussion.
 
 Unknown Names
 -------------
 
-If a first and last name match a database of known names, then the status will be set to "valid". If there is no match the status is set to "unknown." This is because is would be nearly impossible to match every possible name on the planet with 100% accuracy in a real-time. So rather than flagging a valid, non-western name as invalid we flag it as invalid and leave it up to you to decide how to handle it. This does mean names like "Aasdfasdf KJDSFKJSDFsdfsd" might get flagged as unknown, even though to a human eye this might seem to be obvious garbage. The unknown status does indicate that the name is suspicious, but since we can't be absolutely sure we leave it up to you.
+If a first and last name match a database of known names, then the status will be set to "valid". If there is no match the status is set to "unknown." This is because it would be nearly impossible to match every possible name on the planet with 100% accuracy in real-time. So rather than flagging a valid, non-western name as invalid we flag it as invalid and leave it up to you to decide how to handle it. This does mean names like "Aasdfasdf KJDSFKJSDFsdfsd" might get flagged as unknown, even though to a human eye this might seem to be obvious garbage. The unknown status does indicate that the name is suspicious, but since we can't be absolutely sure we leave it up to you.
 
 And that's the Name API. 
 
