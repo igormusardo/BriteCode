@@ -33,7 +33,7 @@ http://bpi.briteverify.com/phones.json?number=704-555-5555&apikey=your-api-key
 Service Types
 -------------
 * mobile
-* pots (Plain Ole Telephone Service, landline)
+* pots (Plain Old Telephone Service, landline)
 * digital
 
 Invalid Phone Number Example

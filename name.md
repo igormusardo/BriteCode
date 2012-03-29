@@ -4,10 +4,10 @@ Name API
 The Name API does essentially three things:
 
 1. Parses a full name into its component parts (first, middle, last ...)
-2. Verifies the name does not include profanity, illegal charters, etc and attempts to match it to a known names database.
+2. Verifies the name does not include profanity, illegal characters, etc and attempts to match it to a known names database.
 3. Appends gender if the name is known
 
-Like all out APIs it is dead simple.
+Like all our APIs it is dead simple.
 
 ```text
 http://bpi.briteverify.com/names.json?fullname=James+McLachlan&apikey=your-api-key

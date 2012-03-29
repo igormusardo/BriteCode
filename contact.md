@@ -1,7 +1,7 @@
 Contact API
 ===========
 
-The contact API let's you verify an entire business card of contact information in one simple request. So instead of having to make 4 different requests to verify a contact's name, email, phone, and address, you just make one call, easy peasy lemon squeezy. Heck, we even throw an IP address verification in there for good measure.
+The contact API let's you verify an entire business card of contact information in one simple request. So instead of having to make 4 different requests to verify a contact's info (name, email, phone, and postal address) you just make one call, easy peasy lemon squeezy. Heck, we even throw an IP address verification in there for good measure.
 
 So using the Contact API is just like using the other BriteVerify APIs except instead of passing a single data element to be verified, you are passing all the contact info associated with a person. The only big difference technically is how you format the parameters of the GET request. When using the Contact API you wrap each parameter in a contact, e.g., "contact[email]=james@righteousdude.com".
 
@@ -21,7 +21,7 @@ Full Contact Verification
 In this example we are going to just pass all our contact info in a single request. For purposes of getting started, let's just assume all this data is valid. If you have not read up on the other APIs, it might be helpful to look them over since Contact is a composite API that assembles them all together. 
 
 ```text
-https://bpi.briteverify.com/contacts.json?contact[name]=James+McLachlan&contact[email]=james@example.com&contact[phone]=7045251234&contact[ip]=174.96.214.3&contact[street]=325+Example+Pl&contact[zip]=101223&apikey=your-api-key
+https://bpi.briteverify.com/contacts.json?contact[name]=James+McLachlan&contact[email]=james@example.com&contact[phone]=7045251234&contact[ip]=174.000.000.000&contact[street]=325+Example+Pl&contact[zip]=101223&apikey=your-api-key
 ```
 
 ```JavaScript
@@ -57,7 +57,7 @@ https://bpi.briteverify.com/contacts.json?contact[name]=James+McLachlan&contact[
     "status":"valid"
   },
   "ip":{
-    "address":"174.96.214.3",
+    "address":"174.000.000.000",
     "isp":"Road Runner Holdco LLC",
     "domain":"rr.com",
     "zip":"28201",
@@ -86,7 +86,7 @@ https://bpi.briteverify.com/contacts.json?contact[name]=James+McLachlan&contact[
 }
 ```
 
-Whew. That's a big response, but hopefully it is pretty straight forward.
+Whew. That's a big response, but hopefully it is pretty straightforward.
 
 Errors & Error Codes
 --------------------
@@ -131,6 +131,6 @@ So what we care about are the first two objects, errors and error_codes.
 
 Errors is basically a humanized version of the error_codes, which represent what actually is invalid about the given data element. Refer to the individual APIs' documentation for more information about which error codes can be returned for a given element.
 
-There we go. That is the Contact API. We will be adding more documentation, examples, and How-Tos soon. In the meantime, have fun.
+There we go. That is the Contact API. We will be adding more documentation, examples, and How-To's soon. In the meantime, have fun.
 
  

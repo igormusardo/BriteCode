@@ -1,7 +1,7 @@
 Email API
 =========
 
-The email api is pretty straight forward. It is a simple GET request with two parameters:
+The email api is pretty straightforward. It is a simple GET request with two parameters:
 
 1. address: the email address to be verified.
 2. apikey: the api key for your BriteVerify account.
@@ -13,7 +13,7 @@ https://bpi.briteverify.com/emails.json?address=james@briteverify.com&apikey=you
 ```
 
 Unless something goes wrong, the HTTP status code will always be 200, regardless if the email is valid or invalid. The above request would yield the follow response.
-```JavaScript
+```Javascript
 {
   "address":"james@briteverify.com",
   "account":"james",
@@ -68,24 +68,24 @@ There are only 4 statuses for an email in BriteVerify.
 Error & Error Code
 ------------------
 
-The the error is really just a humanized version of the error code. So that an error_cdoe of "email_account_invalid" will have an error of "Email account invalid." The error in this sense is really the "error message," something intended to be displayed in a Web Form or application UI.
+The the error is really just a humanized version of the error code. So that an error_code of "email_account_invalid" will have an error of "Email account invalid." The error in this sense is really the "error message," something intended to be displayed in a Web Form or application UI.
 
 ###Error Codes
 
 * email_address_invalid: the email is not formatted correctly
 * email_domain_invalid: the domain does not exist or is not capable of receiving email
-* email_account_invalid: the email 
+* email_account_invalid: the email account does not exist on the domain
 
 Connected
 ---------
 
-If you pass an additional parameter of "verify_connected=true", and the email is valid, we will then scan the online networks, wishlists, public directories, social networks, photo sharing sites, basically the internet, to see if the email is "connected" to other active accounts. This indicates that the email is much more likely to be actively used and connected to a real person. The connected attribute will be present if the email is valid and the verify_connected parameter is passed as true. 
+If you pass an additional parameter of "verify_connected=true", and the email is valid, we will then scan the online networks, wishlists, public directories, social networks, photo sharing sites (basically the internet itself) to see if the email is "connected" to other active accounts. This indicates that the email is much more likely to be actively used and connected to a real person. The connected attribute will be present if the email is valid and the verify_connected parameter is passed as true. 
 
 ```text
 https://bpi.briteverify.com/emails.json?address=james@briteverify.com&verify_connected=true&apikey=your-api-key
 ```
 
-```JavaScript
+```Javascript
 {
   "address":"james@briteverify.com",
   "account":"james",
@@ -101,7 +101,7 @@ Disposable
 
 A temporary or "disposable" email address is one that a user has set up to live for only a short period of time for a variety of reasons. Usually you don't want to accept these types of emails, but we leave that up to how you wish to implement your own applications. These emails are just like any other emails and the "status" will reflect that. However, the disposable flag will be present if the email is from a known temporary email provider.
 
-```JavaScript
+```Javascript
 {
   "address":"james@veryhidden.com",
   "account":"james",

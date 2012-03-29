@@ -10,12 +10,12 @@ Examples
 ###A Valid IP
 
 ```text
-http://bpi.briteverify.com/ips.json?address=174.96.214.3&apikey=your-api-key
+http://bpi.briteverify.com/ips.json?address=000.00.000.0&apikey=your-api-key
 ```
 
 ```JavaScript
 {
-  "address":"174.96.214.3",
+  "address":"000.00.000.0",
   "isp":"Road Runner Holdco LLC",
   "domain":"rr.com",
   "zip":"28201",
@@ -33,12 +33,12 @@ http://bpi.briteverify.com/ips.json?address=174.96.214.3&apikey=your-api-key
 ###An invalid IP
 
 ```text
-http://bpi.briteverify.com/ips.json?address=174.96.214.323423423&apikey=your-api-key
+http://bpi.briteverify.com/ips.json?address=000.00.000.023423423&apikey=your-api-key
 ```
 
 ```JavaScript
 {
-  "address":"174.96.214.323423423",
+  "address":"000.00.000.023423423",
   "longitude":"0",
   "latitude":"0",
   "status":"invalid",

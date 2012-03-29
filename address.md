@@ -1,7 +1,7 @@
 US Postal Address API
 =====================
 
-The Postal Address service provides Delivery Point Verification (DPV) of a US address. This ensures that the address is capable of receiving mail, not just that if physically exists. This means that if an apartment number is omitted for an address that is a highrise apartment build, then it will be flagged invalid.
+The Postal Address service provides Delivery Point Verification (DPV) of a US address. This ensures that the address is capable of receiving mail, not just that if physically exists. This means that if an apartment number is omitted for an address that is a high-rise apartment building, then it will be flagged invalid.
 
 Examples
 --------

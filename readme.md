@@ -19,5 +19,11 @@ BriteServices
 * [Name](https://github.com/BriteVerify/BriteCode/blob/master/name.md)
 * [IP Address](https://github.com/BriteVerify/BriteCode/blob/master/ip.md)
 * [Contact](https://github.com/BriteVerify/BriteCode/blob/master/contact.md)
+* [BriteFiles](https://github.com/BriteVerify/BriteCode/blob/master/brite_files.md)
+
+
+Old API
+-------
+Our legacy API is still fully supported and the documentation is available in our old [Developer Guide](https://github.com/BriteVerify/BriteCode/blob/master/bvdg.pdf)
 
 
