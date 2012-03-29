@@ -24,6 +24,6 @@ BriteServices
 
 Old API
 -------
-Our legacy API is still fully supported and the documentation is available in our old [Developer Guide](https://github.com/BriteVerify/BriteCode/blob/master/bvdg.pdf)
+Our legacy API is still fully supported and the documentation is available in our old [Developer Guide](http://docs.google.com/fileview?id=0B0VBKKQ-VS7CYmJlMTY0MTQtNzA0MC00ZjlkLWFlMGQtZmYyN2Y3ZGI5NGMz&hl=en&authkey=CKSAocMI)
 
 
