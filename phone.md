@@ -7,7 +7,7 @@ Valid Phone Number Example
 --------------------------
 
 ```text
-http://bpi.briteverify.com/phones.json?number=704-555-5555&apikey=your-api-key
+https://bpi.briteverify.com/phones.json?number=704-555-5555&apikey=your-api-key
 ```
 
 ```JavaScript
@@ -40,7 +40,7 @@ Invalid Phone Number Example
 ----------------------------
 
 ```text
-http://bpi.briteverify.com/phones.json?number=704-123-1234&apikey=your-api-key
+https://bpi.briteverify.com/phones.json?number=704-123-1234&apikey=your-api-key
 ```
 
 ```JavaScript

@@ -9,7 +9,7 @@ Examples
 ###Valid US Address 
 
 ```text
-http://bpi.briteverify.com/addresses.json?address[street]=120+N+Cedar&address[unit]=Apt+3201&address[zip]=28210&apikey=your-apikey
+https://bpi.briteverify.com/addresses.json?address[street]=120+N+Cedar&address[unit]=Apt+3201&address[zip]=28210&apikey=your-apikey
 ```
 
 ```JavaScript
@@ -35,7 +35,7 @@ http://bpi.briteverify.com/addresses.json?address[street]=120+N+Cedar&address[un
 ###Error Example
 
 ```text
-http://bpi.briteverify.com/addresses.json?address[street]=120+N+Cedar&address[zip]=28210&apikey=your-apikey
+https://bpi.briteverify.com/addresses.json?address[street]=120+N+Cedar&address[zip]=28210&apikey=your-apikey
 ```
 
 ```JavaScript

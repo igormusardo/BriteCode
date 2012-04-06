@@ -10,7 +10,7 @@ Examples
 ###A Valid IP
 
 ```text
-http://bpi.briteverify.com/ips.json?address=000.00.000.0&apikey=your-api-key
+https://bpi.briteverify.com/ips.json?address=000.00.000.0&apikey=your-api-key
 ```
 
 ```JavaScript
@@ -33,7 +33,7 @@ http://bpi.briteverify.com/ips.json?address=000.00.000.0&apikey=your-api-key
 ###An invalid IP
 
 ```text
-http://bpi.briteverify.com/ips.json?address=000.00.000.023423423&apikey=your-api-key
+https://bpi.briteverify.com/ips.json?address=000.00.000.023423423&apikey=your-api-key
 ```
 
 ```JavaScript
