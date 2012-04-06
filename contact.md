@@ -52,6 +52,7 @@ https://bpi.briteverify.com/contacts.json?contact[name]=James+McLachlan&contact[
     "state":"NC",
     "country":"United States of America",
     "country_code":"US",
+    "service_type" : "mobile",
     "timezone":"Eastern Time",
     "timezone_code":"05",
     "status":"valid"
@@ -80,7 +81,8 @@ https://bpi.briteverify.com/contacts.json?contact[name]=James+McLachlan&contact[
     "country_code":"US",
     "congressional_district":"09",
     "address_type":"Street",
-    "status":"valid","corrected":true
+    "status":"valid",
+    "corrected":true
   },
   "duration":0.745678305
 }
